@@ -7,9 +7,9 @@ before_install:
   - travis_retry gem install bundler
 
 rvm:
-  - 2.5.0
-  - 2.4.3
-  - 2.3.6
+  - 2.5.3
+  - 2.4.5
+  - 2.3.8
   - 2.2.9
 
 env:
@@ -28,18 +28,18 @@ env:
 
 matrix:
   include:
-    - rvm: 2.5.0
+    - rvm: 2.5.3
       env: RAILS=master DB=sqlite3
-    - rvm: 2.5.0
+    - rvm: 2.5.3
       env: RAILS=master DB=mysql
-    - rvm: 2.5.0
+    - rvm: 2.5.3
       env: RAILS=master DB=postgres
 
-    - rvm: 2.4.3
+    - rvm: 2.4.5
       env: RAILS=master DB=sqlite3
-    - rvm: 2.4.3
+    - rvm: 2.4.5
       env: RAILS=master DB=mysql
-    - rvm: 2.4.3
+    - rvm: 2.4.5
       env: RAILS=master DB=postgres
 
 before_script:
